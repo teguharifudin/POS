@@ -26,12 +26,6 @@ const Register = () => {
       message.error("Registration Failed");
     }
   };
-  // prevent for login user
-  useEffect(() => {
-    if (localStorage.getItem("user")) {
-      navigate("/");
-    }
-  }, [navigate]);
 
   return (
     <>
